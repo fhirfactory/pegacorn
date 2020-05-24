@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Based on https://github.com/camelinaction/camelinaction2/blob/master/pom.xml -->
+
+    <groupId>net.fhirfactory.pegacorn</groupId>
+    <artifactId>the-pegacorn-project</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>Pegacorn</name>
+    <description>Pegacorn is a Free Open Source Software (FOSS) framework for the integration, management and presentation of FHIR based services and functions.</description>
+    <inceptionYear>2019</inceptionYear>
+
+    <prerequisites>
+        <maven>3.5.0</maven>
+    </prerequisites>
+
+    <developers>
+        <developer>
+            <id>mahunter</id>
+        </developer>
+        <developer>
+            <id>jrschremmer</id>
+        </developer>
+    </developers>
+
+    <modules>
+        <!--module>pegacorn-fhirplace</module -->
+        <module>../pegacorn-deployment</module>
+        <module>../pegacorn-common</module>
+        <module>../pegacorn-communicate</module>
+<!--        <module>../pegacorn-ladon</module> -->
+<!--        <module>../pegacorn-mimic</module> -->
+    </modules>
+
+    <scm>
+        <url>https://actgovernment@dev.azure.com/ACTGovernment/Pegacorn/_git/pegacorn</url>
+        <!--url>https://github.com/fhirbox/the-pegacorn-project.git</url -->
+    </scm>
+
+    <properties>
+       
+        <version-ca.uhn.hapi.fhir>4.2.0</version-ca.uhn.hapi.fhir>
+                
+        <version-io.netty>4.1.47.Final</version-io.netty>
+                
+        <version-org.arquillian>1.4.0.Final</version-org.arquillian>
+
+        <version-org.apache.camel>3.1.0</version-org.apache.camel>
+        
+        <version-org.apache.maven.plugin>3.2.3</version-org.apache.maven.plugin>
+        <version-org.apache.maven.surefire.plugin>2.22.1</version-org.apache.maven.surefire.plugin>        
+        <version-org.apache.maven.war.plugin>3.2.3</version-org.apache.maven.war.plugin>
+        <version-org.apache.maven.compiler.plugin>3.8.0</version-org.apache.maven.compiler.plugin>     
+        <version-org.apache.maven.resources.plugin>3.1.0</version-org.apache.maven.resources.plugin>
+        <version-org.apache.maven.clean.plugin>3.1.0</version-org.apache.maven.clean.plugin>
+        <version-org.apache.maven.install.plugin>2.5.2</version-org.apache.maven.install.plugin>
+        <version-org.apache.maven.remoteresource.plugin>1.7.0</version-org.apache.maven.remoteresource.plugin>
+                                   
+        <version-org.eclipse.jetty.plugin>8.1.17.v20150415</version-org.eclipse.jetty.plugin>    
+        <version-org.eclipse.jetty.plugin-9>9.4.12.v20180830</version-org.eclipse.jetty.plugin-9>
+        <version-org.eclipse.maven.plugin>3.1.0</version-org.eclipse.maven.plugin>
+
+        <version-org.infinispan>10.1.5.Final</version-org.infinispan>
+        
+        <version-org.json>20190722</version-org.json>
+                
+        <version-org.junit>4.12</version-org.junit>
+
+        <version-org.wildfly>18.0.1.Final</version-org.wildfly>
+        <version-org.wildfly.maven.plugin>2.0.2.Final</version-org.wildfly.maven.plugin>
+        <version-org.wildfly.swamp>2017.11.0</version-org.wildfly.swamp>
+        
+        <version-org.slf4j>1.7.25</version-org.slf4j>
+        <version-org.log4j>1.2.17</version-org.log4j>
+                
+        <javax.enterprise.cdi-api.version>2.0</javax.enterprise.cdi-api.version>
+        <fabric8.maven.plugin.version>3.5.38</fabric8.maven.plugin.version>
+        <docker.maven.plugin.version>0.31.0</docker.maven.plugin.version>
+        <arquillian-cube-version>1.9.1</arquillian-cube-version>
+
+        <activemq-version>5.15.7</activemq-version>
+        <activemq-karaf-version>5.13.8</activemq-karaf-version>
+        <cxf-version>3.2.10</cxf-version>
+        <hawtio-version>1.4.68</hawtio-version>
+        <commons-lang3-version>3.8</commons-lang3-version>
+        <commons-dbcp2-version>2.5.0</commons-dbcp2-version>
+        <deltaspike-version>1.9.0</deltaspike-version>
+        <hystrix-version>1.5.18</hystrix-version>
+        <jackson-version>2.9.7</jackson-version>
+        <javax-mail-version>1.6.1</javax-mail-version>
+        <jolokia-version>1.6.0</jolokia-version>
+<!--        <jetty-plugin-version>8.1.17.v20150415</jetty-plugin-version> -->
+<!--        <jetty9-plugin-version>9.4.12.v20180830</jetty9-plugin-version> -->
+<!--        <junit-version>4.12</junit-version> -->
+        <karaf-version>4.2.1</karaf-version>
+<!--        <log4j-version>1.2.17</log4j-version> -->
+        <maven-bundle-plugin-version>3.3.0</maven-bundle-plugin-version>
+        <mock-javamail-version>1.9</mock-javamail-version>
+<!--        <slf4j-version>1.7.25</slf4j-version> -->
+        <spring-version>5.1.6.RELEASE</spring-version>
+        <spring-boot-version>2.1.4.RELEASE</spring-boot-version>
+        <swagger-version>1.5.21</swagger-version>
+        <xbean-version>4.5</xbean-version>
+        <vertx-version>3.6.3</vertx-version>
+        <weld-version>2.4.7.Final</weld-version>
+        <thorntail-version>2.5.0.Final</thorntail-version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+    </properties>
+
+    <build>
+        <defaultGoal>install</defaultGoal>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>${version-org.apache.maven.compiler.plugin}</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <maxmem>512M</maxmem>
+                        <showDeprecation>true</showDeprecation>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-eclipse-plugin</artifactId>
+                    <version>${version-org.eclipse.maven.plugin}</version>
+                    <configuration>
+                        <downloadSources>true</downloadSources>
+                        <downloadJavadocs>false</downloadJavadocs>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-resources-plugin</artifactId>
+                    <version>${version-org.apache.maven.resources.plugin}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-clean-plugin</artifactId>
+                    <version>${version-org.apache.maven.clean.plugin}</version>
+                    <configuration>
+                        <filesets>
+                            <fileset>
+                                <directory>activemq-data</directory>
+                            </fileset>
+                        </filesets>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-install-plugin</artifactId>
+                    <version>${version-org.apache.maven.install.plugin}</version>
+                </plugin>
+                <plugin>
+                    <artifactId>maven-remote-resources-plugin</artifactId>
+                    <version>${version-org.apache.maven.remoteresource.plugin}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-jar-plugin</artifactId>
+                    <version>2.6</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-dependency-plugin</artifactId>
+                    <version>2.10</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.18.1</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <version>2.15</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>1.6.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.camel</groupId>
+                    <artifactId>camel-maven-plugin</artifactId>
+                    <version>${version-org.apache.camel}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.camel</groupId>
+                    <artifactId>camel-package-maven-plugin</artifactId>
+                    <version>${version-org.apache.camel}</version>
+                </plugin>
+                <plugin>
+                    <groupId>io.hawt</groupId>
+                    <artifactId>hawtio-maven-plugin</artifactId>
+                    <version>${hawtio-version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <version>${maven-bundle-plugin-version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.camel</groupId>
+                    <artifactId>camel-api-component-maven-plugin</artifactId>
+                    <version>${version-org.apache.camel}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>build-helper-maven-plugin</artifactId>
+                    <version>1.10</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.wildfly.plugins</groupId>
+                    <artifactId>wildfly-maven-plugin</artifactId>
+                    <version>1.1.0.Alpha11</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <childDelegation>false</childDelegation>
+                    <useFile>true</useFile>
+                    <failIfNoTests>false</failIfNoTests>
+                    <!-- lets re-run the failed test one more time, just to be sure -->
+                    <rerunFailingTestsCount>2</rerunFailingTestsCount>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.wildfly.bom</groupId>
+                <artifactId>wildfly-jakartaee8</artifactId>
+                <version>${version-org.wildfly}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+                        
+            <dependency>
+                <groupId>org.arquillian.cube</groupId>
+                <artifactId>arquillian-cube-bom</artifactId>
+                <version>${arquillian-cube-version}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
+            <!-- Camel -->
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>camel-parent</artifactId>
+                <version>${version-org.apache.camel}</version>
+                <scope>import</scope>
+                <type>pom</type>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.camel</groupId>
+                <artifactId>spi-annotations</artifactId>
+                <version>${version-org.apache.camel}</version>
+            </dependency>
+
+            <!-- Logging -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${version-org.slf4j}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-log4j12</artifactId>
+                <version>${version-org.slf4j}</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${version-org.log4j}</version>
+            </dependency>
+
+            <!-- Testing -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${version-org.junit}</version>
+            </dependency>
+
+            <!-- Jolokia -->
+            <dependency>
+                <groupId>org.jolokia</groupId>
+                <artifactId>jolokia-core</artifactId>
+                <version>${jolokia-version}</version>
+            </dependency>
+
+            <!-- Spring -->
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-core</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-beans</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-aop</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jdbc</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-orm</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-jms</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-support</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-tx</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-expression</artifactId>
+                <version>${spring-version}</version>
+            </dependency>
+
+            <!-- Java FTP server -->
+            <dependency>
+                <groupId>org.apache.ftpserver</groupId>
+                <artifactId>ftpserver-core</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.ftpserver</groupId>
+                <artifactId>ftplet-api</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.mina</groupId>
+                <artifactId>mina-core</artifactId>
+                <version>2.0.9</version>
+            </dependency>
+        </dependencies>
+
+    </dependencyManagement>
+
+</project>
