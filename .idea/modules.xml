@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pegacorn.iml" filepath="$PROJECT_DIR$/pegacorn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-common/pegacorn-common.iml" filepath="$PROJECT_DIR$/../pegacorn-common/pegacorn-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-communicate/pegacorn-communicate.iml" filepath="$PROJECT_DIR$/../pegacorn-communicate/pegacorn-communicate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-communicate-iris/pegacorn-communicate-iris.iml" filepath="$PROJECT_DIR$/../pegacorn-communicate-iris/pegacorn-communicate-iris.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-deployment/pegacorn-deployment.iml" filepath="$PROJECT_DIR$/../pegacorn-deployment/pegacorn-deployment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-fhir-r4-model/pegacorn-fhir-r4-model.iml" filepath="$PROJECT_DIR$/../pegacorn-fhir-r4-model/pegacorn-fhir-r4-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-petasos/pegacorn-petasos.iml" filepath="$PROJECT_DIR$/../pegacorn-petasos/pegacorn-petasos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-petasos-base/pegacorn-petasos-base.iml" filepath="$PROJECT_DIR$/../pegacorn-petasos-base/pegacorn-petasos-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-petasos-common/pegacorn-petasos-common.iml" filepath="$PROJECT_DIR$/../pegacorn-petasos-common/pegacorn-petasos-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-petasos-interchange/pegacorn-petasos-interchange.iml" filepath="$PROJECT_DIR$/../pegacorn-petasos-interchange/pegacorn-petasos-interchange.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-petasos-resilience/pegacorn-petasos-resilience.iml" filepath="$PROJECT_DIR$/../pegacorn-petasos-resilience/pegacorn-petasos-resilience.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-petasos-interchange/pegacorn-petasos-stub.iml" filepath="$PROJECT_DIR$/../pegacorn-petasos-interchange/pegacorn-petasos-stub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pegacorn-petasos-workunitprocessor/pegacorn-petasos-workunitprocessor.iml" filepath="$PROJECT_DIR$/../pegacorn-petasos-workunitprocessor/pegacorn-petasos-workunitprocessor.iml" />
+    </modules>
+  </component>
+</project>

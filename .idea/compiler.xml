@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="pegacorn-communicate-iris" />
+        <module name="pegacorn-petasos-stub" />
+        <module name="pegacorn-petasos-common" />
+        <module name="pegacorn-common" />
+        <module name="pegacorn-deployment" />
+        <module name="pegacorn-petasos-base" />
+        <module name="pegacorn-fhir-r4-model" />
+        <module name="pegacorn-petasos-interchange" />
+        <module name="pegacorn-petasos-resilience" />
+        <module name="pegacorn-petasos-workunitprocessor" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="pegacorn" target="1.8" />
+      <module name="pegacorn-common" target="1.8" />
+      <module name="pegacorn-communicate" target="1.8" />
+      <module name="pegacorn-communicate-iris" target="1.8" />
+      <module name="pegacorn-deployment" target="1.8" />
+      <module name="pegacorn-fhir-r4-model" target="1.8" />
+      <module name="pegacorn-petasos" target="1.8" />
+      <module name="pegacorn-petasos-base" target="1.8" />
+      <module name="pegacorn-petasos-common" target="1.8" />
+      <module name="pegacorn-petasos-interchange" target="1.8" />
+      <module name="pegacorn-petasos-resilience" target="1.8" />
+      <module name="pegacorn-petasos-stub" target="1.8" />
+      <module name="pegacorn-petasos-workunitprocessor" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

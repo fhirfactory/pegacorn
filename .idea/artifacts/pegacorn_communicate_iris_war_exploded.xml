@@ -1,0 +1,148 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="pegacorn-communicate-iris:war exploded">
+    <output-path>$PROJECT_DIR$/../pegacorn-communicate-iris/target/pegacorn-communicate-iris</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>pegacorn-communicate-iris</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="pegacorn-communicate-iris" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="pegacorn-deployment-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="pegacorn-deployment" />
+          </element>
+          <element id="archive" name="pegacorn-common-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="pegacorn-common" />
+          </element>
+          <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: ca.uhn.hapi.fhir:org.hl7.fhir.r4:4.2.0" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-io:9.4.12.v20180830" />
+          <element id="library" level="project" name="Maven: org.eclipse.jetty:jetty-util:9.4.12.v20180830" />
+          <element id="library" level="project" name="Maven: net.fhirfactory.pegacorn:pegacorn-petasos-stub:1.0.0-SNAPSHOT" />
+          <element id="archive" name="pegacorn-fhir-r4-model-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="pegacorn-fhir-r4-model" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-core:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-core-engine:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-api:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-base:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-management-api:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-util:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-bean:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-browse:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-caffeine-lrucache:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-controlbus:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-dataformat:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-dataset:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-direct:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-directvm:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-file:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-core-catalog:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-language:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-log:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-mock:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-ref:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-rest:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-tooling-model:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-util-json:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-saga:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-scheduler:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-seda:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-stub:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-timer:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-validator:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-xml-jaxp:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-vm:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-xpath:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-xslt:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-xml-jaxb:3.1.0" />
+          <element id="library" level="project" name="Maven: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2" />
+          <element id="library" level="project" name="Maven: jakarta.activation:jakarta.activation-api:1.2.1" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-core:2.3.0" />
+          <element id="library" level="project" name="Maven: com.sun.xml.bind:jaxb-impl:2.3.0" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-cdi:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-support:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-main:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-headersmap:3.1.0" />
+          <element id="library" level="project" name="Maven: com.cedarsoftware:java-util:1.40.0" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.13.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-jms:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-spring:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-core-xml:3.1.0" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jms:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-messaging:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.1.6.RELEASE" />
+          <element id="library" level="project" name="Maven: org.apache.geronimo.specs:geronimo-jms_2.0_spec:1.0-alpha-2" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-netty-http:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-netty:3.1.0" />
+          <element id="library" level="project" name="Maven: io.netty:netty-buffer:4.1.45.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec:4.1.45.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-common:4.1.45.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-handler:4.1.45.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-resolver:4.1.45.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport:4.1.45.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport-native-epoll:4.1.45.Final" />
+          <element id="library" level="project" name="Maven: io.netty:netty-transport-native-unix-common:4.1.45.Final" />
+          <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.6" />
+          <element id="library" level="project" name="Maven: io.netty:netty-codec-http:4.1.45.Final" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-http-base:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-cloud:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-servlet:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-http-common:3.1.0" />
+          <element id="library" level="project" name="Maven: org.apache.camel:camel-attachments:3.1.0" />
+          <element id="library" level="project" name="Maven: com.sun.activation:javax.activation:1.2.0" />
+          <element id="library" level="project" name="Maven: ca.uhn.hapi.fhir:hapi-fhir-base:4.2.0" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.5" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-text:1.7" />
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.13" />
+          <element id="library" level="project" name="Maven: commons-io:commons-io:2.5" />
+          <element id="library" level="project" name="Maven: com.google.guava:guava:25.0-jre" />
+          <element id="library" level="project" name="Maven: ca.uhn.hapi.fhir:hapi-fhir-structures-r4:4.2.0" />
+          <element id="library" level="project" name="Maven: ca.uhn.hapi.fhir:org.hl7.fhir.utilities:4.2.0" />
+          <element id="library" level="project" name="Maven: org.fhir:ucum:1.0.2" />
+          <element id="library" level="project" name="Maven: xpp3:xpp3:1.1.4c" />
+          <element id="library" level="project" name="Maven: xpp3:xpp3_xpath:1.1.4c" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:jsr305:3.0.2" />
+          <element id="library" level="project" name="Maven: ca.uhn.hapi.fhir:hapi-fhir-validation-resources-r4:4.2.0" />
+          <element id="library" level="project" name="Maven: com.phloc:phloc-schematron:2.7.0" />
+          <element id="library" level="project" name="Maven: com.phloc:phloc-commons:4.3.3" />
+          <element id="library" level="project" name="Maven: com.google.code.findbugs:annotations:2.0.3" />
+          <element id="library" level="project" name="Maven: net.sf.saxon:Saxon-HE:9.9.1-6" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.8" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.9.10.1" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.10" />
+          <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.9.10" />
+          <element id="library" level="project" name="Maven: org.eclipse.persistence:javax.persistence:2.1.0" />
+          <element id="library" level="project" name="Maven: org.infinispan:infinispan-core:10.1.5.Final" />
+          <element id="library" level="project" name="Maven: org.infinispan.protostream:protostream:4.3.2.Final" />
+          <element id="library" level="project" name="Maven: com.github.ben-manes.caffeine:caffeine:2.6.2" />
+          <element id="library" level="project" name="Maven: org.jboss.logging:jboss-logging:3.4.1.Final" />
+          <element id="library" level="project" name="Maven: io.reactivex.rxjava2:rxjava:2.2.2" />
+          <element id="library" level="project" name="Maven: org.reactivestreams:reactive-streams:1.0.2" />
+          <element id="library" level="project" name="Maven: org.infinispan:infinispan-commons:10.1.5.Final" />
+          <element id="library" level="project" name="Maven: org.jgroups:jgroups:4.2.3.Final" />
+          <element id="library" level="project" name="Maven: org.json:json:20190722" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.2.3" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.2.3" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/../pegacorn-communicate-iris/target/pegacorn-communicate-iris/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="pegacorn-communicate-iris/web/Web" />
+    </root>
+  </artifact>
+</component>

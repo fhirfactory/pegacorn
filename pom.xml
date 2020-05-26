@@ -29,12 +29,10 @@
     </developers>
 
     <modules>
-        <!--module>pegacorn-fhirplace</module -->
-        <module>../pegacorn-deployment</module>
         <module>../pegacorn-common</module>
+        <module>../pegacorn-deployment</module>
         <module>../pegacorn-fhir-r4-model</module>
-        <module>../pegacorn-petasos-base</module>
-        <module>../pegacorn-petasos-multisite</module>
+        <module>../pegacorn-petasos</module>
         <module>../pegacorn-communicate</module>
 <!--        <module>../pegacorn-ladon</module> -->
 <!--        <module>../pegacorn-mimic</module> -->
