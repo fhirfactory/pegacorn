@@ -47,8 +47,7 @@
     </modules>
 
     <scm>
-        <url>https://actgovernment@dev.azure.com/ACTGovernment/Pegacorn/_git/pegacorn</url>
-        <!--url>https://github.com/fhirbox/the-pegacorn-project.git</url -->
+        <url>https://github.com/fhirfactory/pegacorn.git</url>
     </scm>
 
     <properties>
