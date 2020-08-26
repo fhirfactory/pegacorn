@@ -130,6 +130,12 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.picketbox</groupId>
+                <artifactId>picketbox-bare</artifactId>
+                <version>5.1.0.Final</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.wildfly.bom</groupId>
                 <artifactId>wildfly-jakartaee8</artifactId>
                 <version>${version-org.wildfly}</version>
@@ -143,9 +149,31 @@
             </dependency>
 
             <dependency>
+                <groupId>org.picketbox</groupId>
+                <artifactId>picketbox-parent</artifactId>
+                <version>5.1.0.Final</version>
+                <type>pom</type>
+            </dependency>
+            <dependency>
+                <groupId>org.picketbox</groupId>
+                <artifactId>picketbox</artifactId>
+                <version>5.1.0.Final</version>
+            </dependency>
+
+            <dependency>
                 <groupId>org.jboss.arquillian</groupId>
                 <artifactId>arquillian-bom</artifactId>
                 <version>${version-org.arquillian}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>picketbox</artifactId>
+                        <groupId>org.picketbox</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>picketbox-parent</artifactId>
+                        <groupId>org.picketbox</groupId>
+                    </exclusion>
+                </exclusions>
                 <scope>import</scope>
                 <type>pom</type>
             </dependency>
