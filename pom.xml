@@ -37,11 +37,10 @@
     </developers>
 
     <modules>
-        <module>../pegacorn-fhir-r4-model</module>
         <module>../pegacorn-platform</module>
         <module>../pegacorn-deployment</module>
         <module>../pegacorn-buildingblocks</module>
-<!--        <module>../pegacorn-ladon</module> -->
+        <module>../pegacorn-ladon</module>
 <!--        <module>../pegacorn-communicate</module> -->
 <!--        <module>../pegacorn-fhirbreak</module> -->
 <!--        <module>../pegacorn-mimic</module> -->
