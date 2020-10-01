@@ -3,6 +3,13 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
+resources:
+  repositories:
+  - repository: PegacornPlatform
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-platform
+
 trigger:
 - master
 
@@ -10,6 +17,8 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- checkout: self
+- checkout: PegacornPlatform
 - task: DownloadSecureFile@1
   name: mvnSettings
   displayName: 'Download Maven Settings'
@@ -21,9 +30,11 @@ steps:
     sudo chmod a+r $(mvnSettings.secureFilePath)
     sudo mkdir -p -m=777 ${HOME}/.m2
     sudo cp -f $(mvnSettings.secureFilePath) ${HOME}/.m2/settings.xml
+    echo 'Current directory contents are'
+    sudo ls -la
 - task: Maven@3
   inputs:
-    mavenPomFile: 'pom.xml'
+    mavenPomFile: '$(Build.Repository.Name)/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
@@ -31,4 +42,13 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'deploy'
+#    options: '-DskipTests'
     options: '--non-recursive'
+# Lookup the maven version and set in a variable, based on
+# 1. https://stackoverflow.com/questions/56394615/how-to-display-the-project-version-as-release-name-in-azure-devops
+# 2. https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables
+# 3. https://stackoverflow.com/questions/2264428/how-to-convert-a-string-to-lower-case-in-bash
+- bash: |
+    cd $(System.DefaultWorkingDirectory)/$(Build.Repository.Name)/
+    v=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout | tr '[:upper:]' '[:lower:]')
+    echo "##vso[task.setvariable variable=projectVersion]$v"
