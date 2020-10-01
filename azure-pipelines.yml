@@ -13,6 +13,10 @@ resources:
 trigger:
 - master
 
+variables:
+# Could potentially parse this from  $(Build.Repository.Name) = fhirfactory/pegacorn
+  baseMavenRepoName: 'pegacorn'
+
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -34,7 +38,7 @@ steps:
     sudo ls -la
 - task: Maven@3
   inputs:
-    mavenPomFile: '$(Build.Repository.Name)/pom.xml'
+    mavenPomFile: '$(baseMavenRepoName)/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
@@ -49,6 +53,6 @@ steps:
 # 2. https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables
 # 3. https://stackoverflow.com/questions/2264428/how-to-convert-a-string-to-lower-case-in-bash
 - bash: |
-    cd $(System.DefaultWorkingDirectory)/$(Build.Repository.Name)/
+    cd $(System.DefaultWorkingDirectory)/$(baseMavenRepoName)/
     v=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout | tr '[:upper:]' '[:lower:]')
     echo "##vso[task.setvariable variable=projectVersion]$v"
