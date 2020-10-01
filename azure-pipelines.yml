@@ -5,10 +5,74 @@
 
 resources:
   repositories:
+  - repository: PegacornBuildingblocks
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-buildingblocks
+  - repository: PegacornBuildingblocksEdge
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-buildingblocks-edge
+  - repository: PegacornBuildingblocksProcessingplant
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-buildingblocks-processingplant
+  - repository: PegacornDeployment
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-deployment
+  - repository: PegacornDeploymentDatasets
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-deployment-datasets
+  - repository: PegacornDeploymentProperties
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-deployment-properties
+  - repository: PegacornDeploymentTopology
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-deployment-topology
+  - repository: PegacornFHIRR4Model
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-fhir-r4-model
   - repository: PegacornPlatform
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-platform
+  - repository: PegacornPlatformCommoncode
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-platform-commoncode
+  - repository: PegacornPlatformPetasos
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-platform-petasos
+  - repository: PegacornPlatformPetasosCore
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-platform-petasos-core
+  - repository: PegacornPlatformPetasosDatasets
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-platform-petasos-datasets
+  - repository: PegacornPlatformPetasosIpc
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-platform-petasos-ipc
+  - repository: PegacornPlatformPetasosModel
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-platform-petasos-model
+  - repository: PegacornPlatformPetasosTopology
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-platform-petasos-topology
+  - repository: PegacornPlatformSamples
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-platform-samples
 
 trigger:
 - master
@@ -22,7 +86,23 @@ pool:
 
 steps:
 - checkout: self
+- checkout: PegacornBuildingblocks
+- checkout: PegacornBuildingblocksEdge
+- checkout: PegacornBuildingblocksProcessingplant
+- checkout: PegacornDeployment
+- checkout: PegacornDeploymentDatasets
+- checkout: PegacornDeploymentProperties
+- checkout: PegacornDeploymentTopology
+- checkout: PegacornFHIRR4Model
 - checkout: PegacornPlatform
+- checkout: PegacornPlatformCommoncode
+- checkout: PegacornPlatformPetasos
+- checkout: PegacornPlatformPetasosCore
+- checkout: PegacornPlatformPetasosDatasets
+- checkout: PegacornPlatformPetasosIpc
+- checkout: PegacornPlatformPetasosModel
+- checkout: PegacornPlatformPetasosTopology
+- checkout: PegacornPlatformSamples
 - task: DownloadSecureFile@1
   name: mvnSettings
   displayName: 'Download Maven Settings'
@@ -47,7 +127,7 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'deploy'
 #    options: '-DskipTests'
-    options: '--non-recursive'
+#    options: '--non-recursive'
 # Lookup the maven version and set in a variable, based on
 # 1. https://stackoverflow.com/questions/56394615/how-to-display-the-project-version-as-release-name-in-azure-devops
 # 2. https://docs.microsoft.com/en-us/azure/devops/pipelines/process/variables
