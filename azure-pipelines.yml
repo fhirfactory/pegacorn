@@ -33,10 +33,6 @@ resources:
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-deployment-topology
-  - repository: PegacornFHIRR4Model
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-fhir-r4-model
   - repository: PegacornLadon
     type: github
     endpoint: fhirfactory
@@ -133,7 +129,6 @@ steps:
 - checkout: PegacornDeploymentDatasets
 - checkout: PegacornDeploymentProperties
 - checkout: PegacornDeploymentTopology
-- checkout: PegacornFHIRR4Model
 - checkout: PegacornLadon
 - checkout: PegacornLadonDtCache
 - checkout: PegacornLadonEdge
@@ -171,7 +166,7 @@ steps:
     mavenPomFile: '$(baseMavenRepoName)/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.8'
+    jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
@@ -186,3 +181,4 @@ steps:
     cd $(System.DefaultWorkingDirectory)/$(baseMavenRepoName)/
     v=$(mvn help:evaluate -Dexpression=project.version -q -DforceStdout | tr '[:upper:]' '[:lower:]')
     echo "##vso[task.setvariable variable=projectVersion]$v"
+    echo ProjectVersion=$(projectVersion)
