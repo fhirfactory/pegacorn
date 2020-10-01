@@ -13,7 +13,7 @@ resources:
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-buildingblocks-edge
-  - repository: PegacornBuildingblocksProcessingplant
+  - repository: PegacornBuildingblocksProcessingPlant
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-buildingblocks-processingplant
@@ -37,6 +37,46 @@ resources:
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-fhir-r4-model
+  - repository: PegacornLadon
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-ladon
+  - repository: PegacornLadonDtCache
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-dtcache
+  - repository: PegacornLadonEdge
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-ladon-edge
+  - repository: PegacornLadonMDR
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-ladon-mdr
+  - repository: PegacornLadonModel
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-ladon-model
+  - repository: PegacornLadonProcessingPlant
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-ladon-processingplant
+  - repository: PegacornLadonSubsystem
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-ladon-subsystem
+  - repository: PegacornLadonTwin
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-ladon-twin
+  - repository: PegacornLadonTwinBehaviours
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-ladon-twin-behaviours
+  - repository: PegacornLadonTwinStateSpace
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-ladon-twin-statespace
   - repository: PegacornPlatform
     type: github
     endpoint: fhirfactory
@@ -88,12 +128,22 @@ steps:
 - checkout: self
 - checkout: PegacornBuildingblocks
 - checkout: PegacornBuildingblocksEdge
-- checkout: PegacornBuildingblocksProcessingplant
+- checkout: PegacornBuildingblocksProcessingPlant
 - checkout: PegacornDeployment
 - checkout: PegacornDeploymentDatasets
 - checkout: PegacornDeploymentProperties
 - checkout: PegacornDeploymentTopology
 - checkout: PegacornFHIRR4Model
+- checkout: PegacornLadon
+- checkout: PegacornLadonDtCache
+- checkout: PegacornLadonEdge
+- checkout: PegacornLadonMDR
+- checkout: PegacornLadonModel
+- checkout: PegacornLadonProcessingPlant
+- checkout: PegacornLadonSubsystem
+- checkout: PegacornLadonTwin
+- checkout: PegacornLadonTwinBehaviours
+- checkout: PegacornLadonTwinStateSpace
 - checkout: PegacornPlatform
 - checkout: PegacornPlatformCommoncode
 - checkout: PegacornPlatformPetasos
