@@ -44,7 +44,7 @@ resources:
   - repository: PegacornLadonDtCache
     type: github
     endpoint: fhirfactory
-    name: fhirfactory/pegacorn-dtcache
+    name: fhirfactory/pegacorn-ladon-dtcache
   - repository: PegacornLadonEdge
     type: github
     endpoint: fhirfactory
