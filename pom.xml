@@ -124,9 +124,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+<!-- Temporarily use 1.8 as 11 is not currently supported on the Azure build agent with error: Fatal error compiling: invalid target release: 11
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-
+-->
         <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
 

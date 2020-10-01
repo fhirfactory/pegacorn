@@ -176,7 +176,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'deploy'
-#    options: '-DskipTests'
+    options: '-DskipTests'
 #    options: '--non-recursive'
 # Lookup the maven version and set in a variable, based on
 # 1. https://stackoverflow.com/questions/56394615/how-to-display-the-project-version-as-release-name-in-azure-devops
