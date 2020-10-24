@@ -41,6 +41,7 @@
         <module>../pegacorn-deployment</module>
         <module>../pegacorn-buildingblocks</module>
         <module>../pegacorn-ladon</module>
+	<module>../pegacorn-fhirplace</module>
 <!--        <module>../pegacorn-communicate</module> -->
 <!--        <module>../pegacorn-fhirbreak</module> -->
 <!--        <module>../pegacorn-mimic</module> -->
