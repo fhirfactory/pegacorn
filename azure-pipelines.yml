@@ -109,6 +109,10 @@ resources:
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-platform-samples
+  - repository: PegacornSotConduit
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-sotconduit
 
 trigger:
 - master
@@ -148,6 +152,7 @@ steps:
 - checkout: PegacornPlatformPetasosModel
 - checkout: PegacornPlatformPetasosTopology
 - checkout: PegacornPlatformSamples
+- checkout: PegacornSotConduit
 - task: DownloadSecureFile@1
   name: mvnSettings
   displayName: 'Download Maven Settings'
