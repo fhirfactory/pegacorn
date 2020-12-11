@@ -41,7 +41,9 @@
         <module>../pegacorn-deployment</module>
         <module>../pegacorn-buildingblocks</module>
         <module>../pegacorn-ladon</module>
-<!--    	<module>../pegacorn-fhirplace</module>-->
+	    <module>../pegacorn-sotconduit/pegacorn-sotconduit</module>
+<!--    	<module>../pegacorn-fhirplace</module>
+-->
 <!--        <module>../pegacorn-communicate</module> -->
 <!--        <module>../pegacorn-fhirbreak</module> -->
 <!--        <module>../pegacorn-mimic</module> -->
@@ -63,11 +65,14 @@
 
         <version-com.github.ben-manes.caffeine>2.8.6</version-com.github.ben-manes.caffeine>
 
+        <version-com.github.java-json-tools-json-patch>1.13</version-com.github.java-json-tools-json-patch>
+
         <version-com.h2database-h2>1.4.200</version-com.h2database-h2>
 
         <version-com.sun.mail-javax>1.6.1</version-com.sun.mail-javax>
 
         <version-io.netty>4.1.47.Final</version-io.netty>
+        <version-io.netty-netty-all>4.1.36.Final</version-io.netty-netty-all>
 
         <version-org.arquillian>1.5.0.Final</version-org.arquillian>
         <version-org.arquillian.cube>1.9.1</version-org.arquillian.cube>
@@ -75,6 +80,8 @@
         <version-org.apache.camel>3.4.3</version-org.apache.camel>
 
         <version-org.apache.commons-lang3>3.10</version-org.apache.commons-lang3>
+
+        <version-org.apache.httpcomponents-httpclient>4.5.12</version-org.apache.httpcomponents-httpclient>
 
         <version-org.apache.maven-plugin>3.2.3</version-org.apache.maven-plugin>
         <version-org.apache.maven-jar-plugin>3.1.2</version-org.apache.maven-jar-plugin>
