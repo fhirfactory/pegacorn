@@ -166,7 +166,7 @@ steps:
     sudo cp -f $(mvnSettings.secureFilePath) ${HOME}/.m2/settings.xml
     echo 'Current directory contents are'
     sudo ls -la
-#    sudo cat $(mvnSettings.secureFilePath)
+    sudo cat $(mvnSettings.secureFilePath)
 - task: Maven@3
   inputs:
     mavenPomFile: '$(baseMavenRepoName)/pom.xml'
