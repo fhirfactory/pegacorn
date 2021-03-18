@@ -39,14 +39,13 @@
     <modules>
         <module>../pegacorn-platform/pegacorn-platform</module>
         <module>../pegacorn-deployment/pegacorn-deployment</module>
-        <module>../pegacorn-buildingblocks</module>
+        <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
         <module>../pegacorn-ladon/pegacorn-ladon</module>
-	    <module>../pegacorn-sotconduit/pegacorn-sotconduit</module>
-<!--    	<module>../pegacorn-fhirplace</module>
--->
-<!--        <module>../pegacorn-communicate</module> -->
-<!--        <module>../pegacorn-fhirbreak</module> -->
-<!--        <module>../pegacorn-mimic</module> -->
+        <module>../pegacorn-sotconduit/pegacorn-sotconduit</module>
+        <module>../pegacorn-mimic/pegacorn-mimic</module>
+        <!--    	<module>../pegacorn-fhirplace</module> -->
+        <module>../pegacorn-communicate</module>
+        <module>../pegacorn-fhirbreak</module>
     </modules>
 
     <scm>
@@ -76,6 +75,7 @@
 
         <version-org.arquillian>1.5.0.Final</version-org.arquillian>
         <version-org.arquillian.cube>1.9.1</version-org.arquillian.cube>
+        <version-org.arquillian-cube-kubernetes>1.18.2</version-org.arquillian-cube-kubernetes>
 
         <version-org.apache.camel>3.4.3</version-org.apache.camel>
 
