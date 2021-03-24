@@ -39,7 +39,7 @@
     <modules>
         <module>../pegacorn-platform/pegacorn-platform</module>
         <module>../pegacorn-deployment/pegacorn-deployment</module>
-<!--        <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module> -->
+        <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
 <!--        <module>../pegacorn-ladon/pegacorn-ladon</module> -->
 <!--        <module>../pegacorn-sotconduit/pegacorn-sotconduit</module> -->
         <module>../pegacorn-mimic/pegacorn-mimic</module>
@@ -77,7 +77,7 @@
         <version-org.arquillian.cube>1.9.1</version-org.arquillian.cube>
         <version-org.arquillian-cube-kubernetes>1.18.2</version-org.arquillian-cube-kubernetes>
 
-        <version-org.apache.camel>3.4.3</version-org.apache.camel>
+        <version-org.apache.camel>3.8.0</version-org.apache.camel>
 
         <version-org.apache.commons-lang3>3.10</version-org.apache.commons-lang3>
 
