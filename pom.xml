@@ -39,10 +39,12 @@
     <modules>
         <module>../pegacorn-platform/pegacorn-platform</module>
         <module>../pegacorn-deployment/pegacorn-deployment</module>
-        <module>../pegacorn-buildingblocks</module>
-        <module>../pegacorn-ladon/pegacorn-ladon</module>
-	    <module>../pegacorn-sotconduit/pegacorn-sotconduit</module>
+        <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
+		<module>../pegacorn-fhirbreak-spokconsole/pegacorn-fhirbreak-spokconsole</module>
+		<module>../pegacorn-mimic-ldapserver</module>
 <!--    	<module>../pegacorn-fhirplace</module>
+        <module>../pegacorn-ladon/pegacorn-ladon</module>
+			<module>../pegacorn-sotconduit/pegacorn-sotconduit</module>
 -->
 <!--        <module>../pegacorn-communicate</module> -->
 <!--        <module>../pegacorn-fhirbreak</module> -->
