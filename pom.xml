@@ -41,11 +41,11 @@
         <module>../pegacorn-deployment/pegacorn-deployment</module>
         <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
         <module>../pegacorn-mimic/pegacorn-mimic</module>
-        <!--
         <module>../pegacorn-ladon/pegacorn-ladon</module>
+        <module>../pegacorn-communicate</module>
+        <!--
         <module>../pegacorn-sotconduit/pegacorn-sotconduit</module>
         <module>../pegacorn-fhirplace</module>
-        <module>../pegacorn-communicate</module>
         <module>../pegacorn-fhirview/pegacorn-fhirview</module>
        <module>../pegacorn-fhirbreak</module>
         -->
@@ -57,12 +57,12 @@
 
     <properties>
        
-        <version-ca.uhn.hapi.fhir>5.1.0</version-ca.uhn.hapi.fhir>
+        <version-ca.uhn.hapi.fhir>5.4.0</version-ca.uhn.hapi.fhir>
 
         <version-ch.qos.logback>0.5</version-ch.qos.logback>
         <version-ch.qos.logback-classic>1.2.3</version-ch.qos.logback-classic>
-        
-        <version-com.fasterxml.jackson.core-jackson-databind>2.9.10.1</version-com.fasterxml.jackson.core-jackson-databind>
+
+        <version-com.fasterxml.jackson.core-jackson-databind>2.12.3</version-com.fasterxml.jackson.core-jackson-databind>
         <version-com.fasterxml.jackson.core-jackson-core>2.9.10</version-com.fasterxml.jackson.core-jackson-core>
 
         <version-com.github.ben-manes.caffeine>2.8.6</version-com.github.ben-manes.caffeine>
@@ -71,7 +71,11 @@
 
         <version-com.h2database-h2>1.4.200</version-com.h2database-h2>
 
+        <version-com.opencsv-csv>4.1</version-com.opencsv-csv>
+
         <version-com.sun.mail-javax>1.6.1</version-com.sun.mail-javax>
+
+        <version-info.picocli-picocli>3.9.6</version-info.picocli-picocli>
 
         <version-io.netty>4.1.47.Final</version-io.netty>
         <version-io.netty-netty-all>4.1.36.Final</version-io.netty-netty-all>
@@ -80,13 +84,14 @@
         <version-org.arquillian.cube>1.9.1</version-org.arquillian.cube>
         <version-org.arquillian-cube-kubernetes>1.18.2</version-org.arquillian-cube-kubernetes>
 
-        <version-org.apache.camel>3.8.0</version-org.apache.camel>
+        <version-org.apache.camel>3.10.0</version-org.apache.camel>
 
         <version-org.apache.commons-lang3>3.10</version-org.apache.commons-lang3>
 
         <version-org.apache.httpcomponents-httpclient>4.5.12</version-org.apache.httpcomponents-httpclient>
 
         <version-org.apache.maven-plugin>3.2.3</version-org.apache.maven-plugin>
+        <version-org.apache.maven-assembly-plugin>3.3.0</version-org.apache.maven-assembly-plugin>
         <version-org.apache.maven-jar-plugin>3.1.2</version-org.apache.maven-jar-plugin>
         <version-org.apache.maven-surefire-plugin>3.0.0-M5</version-org.apache.maven-surefire-plugin>
         <version-org.apache.maven-failsafe-plugin>3.0.0-M5</version-org.apache.maven-failsafe-plugin>
@@ -103,6 +108,7 @@
         <version-org.apache.avro-avro-plugin>1.10.0</version-org.apache.avro-avro-plugin>
 
         <version-org.basepom.maven-duplicate-finder-plugin>1.4.0</version-org.basepom.maven-duplicate-finder-plugin>
+
 
         <version-org.eclipse.jetty.plugin>8.1.17.v20150415</version-org.eclipse.jetty.plugin>
         <version-org.eclipse.jetty.plugin-9>9.4.30.v20200611</version-org.eclipse.jetty.plugin-9>
@@ -128,13 +134,13 @@
 
         <version-org.thymeleaf>3.0.11.RELEASE</version-org.thymeleaf>
 
-        <version-org.wildfly>20.0.1.Final</version-org.wildfly>
+        <version-org.wildfly>22.0.1.Final</version-org.wildfly>
         <version-org.wildfly-maven-plugin>2.0.2.Final</version-org.wildfly-maven-plugin>
         <version-org.wildfly.swamp>2018.5.0</version-org.wildfly.swamp>
         <version-org.wildfly.core-wildfly-embedded>11.1.1.Final</version-org.wildfly.core-wildfly-embedded>
         <version-org.wildfly.arquillian-wildfly-arquillian-container-managed>2.2.0.Final</version-org.wildfly.arquillian-wildfly-arquillian-container-managed>
 
-        <version-org.slf4j>1.7.25</version-org.slf4j>
+        <version-org.slf4j>1.7.30</version-org.slf4j>
         <version-org.log4j>1.2.17</version-org.log4j>
 
         <version-io.fabric8-docker-maven-plugin>0.31.0</version-io.fabric8-docker-maven-plugin>
