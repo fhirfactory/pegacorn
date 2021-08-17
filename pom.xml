@@ -38,6 +38,8 @@
 
     <modules>
         <module>../pegacorn-platform/pegacorn-platform</module>
+        <module>../pegacorn-petasos/pegacorn-petasos</module>
+        <module>../pegacorn-core/pegacorn-core</module>
         <module>../pegacorn-deployment/pegacorn-deployment</module>
         <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
 	    <module>../pegacorn-mitaf</module>
