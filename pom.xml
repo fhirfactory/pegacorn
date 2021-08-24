@@ -41,8 +41,7 @@
         <module>../pegacorn-deployment/pegacorn-deployment</module>
         <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
 		<module>../pegacorn-fhirbreak-spokconsole/pegacorn-fhirbreak-spokconsole</module>
-		<module>../pegacorn-mimic-ldapserver</module>
-		<module>../pegacorn-buildingblocks-apacheds</module>
+		<module>../pegacorn-fhirbreak-corpservices/pegacorn-fhirbreak-corpservices</module>
     </modules>
 
     <scm>
