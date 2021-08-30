@@ -41,6 +41,7 @@
         <module>../pegacorn-deployment/pegacorn-deployment</module>
         <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
 	    <module>../pegacorn-mitaf</module>
+        <module>../pegacorn-hestia-audit</module>
  <!--
         <module>../pegacorn-mimic/pegacorn-mimic</module>
         <module>../pegacorn-ladon/pegacorn-ladon</module>
