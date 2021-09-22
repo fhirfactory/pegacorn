@@ -42,7 +42,7 @@
         <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
 	    <module>../pegacorn-mitaf</module>
         <module>../pegacorn-hestia-audit</module>
-        <!--module>../pegacorn-communicate</module-->
+        <module>../pegacorn-communicate</module>
         <!--module>../pegacorn-ladon/pegacorn-ladon</module-->
         <module>../pegacorn-fhirplace</module>
         <module>../pegacorn-itops</module>
@@ -69,8 +69,8 @@
         <version-ch.qos.logback-classic>1.2.3</version-ch.qos.logback-classic>
 
         <version-com.fasterxml.jackson.core-jackson-databind>2.12.3</version-com.fasterxml.jackson.core-jackson-databind>
-        <version-com.fasterxml.jackson.core-jackson-core>2.9.10</version-com.fasterxml.jackson.core-jackson-core>
-        <version-com.fasterxml.jackson.datatype-jackson-datatype-jsr310>2.9.10</version-com.fasterxml.jackson.datatype-jackson-datatype-jsr310>
+        <version-com.fasterxml.jackson.core-jackson-core>2.12.3</version-com.fasterxml.jackson.core-jackson-core>
+        <version-com.fasterxml.jackson.datatype-jackson-datatype-jsr310>2.12.3</version-com.fasterxml.jackson.datatype-jackson-datatype-jsr310>
 
         <version-com.github.ben-manes.caffeine>2.8.6</version-com.github.ben-manes.caffeine>
 

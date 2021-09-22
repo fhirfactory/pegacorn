@@ -93,10 +93,6 @@ resources:
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-platform-petasos-datasets
-  - repository: PegacornPlatformPetasosIpc
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-petasos-ipc
   - repository: PegacornPlatformPetasosModel
     type: github
     endpoint: fhirfactory
@@ -105,10 +101,6 @@ resources:
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-platform-petasos-topology
-  - repository: PegacornPlatformSamples
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-samples
   - repository: PegacornSotConduit
     type: github
     endpoint: fhirfactory
