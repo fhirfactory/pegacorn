@@ -42,7 +42,6 @@
         <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
 	    <module>../pegacorn-mitaf</module>
         <module>../pegacorn-hestia-audit</module>
-		<module>../pegacorn-fhirbreak-spokconsole/pegacorn-fhirbreak-spokconsole</module>
 		<module>../pegacorn-fhirbreak-corpservices/pegacorn-fhirbreak-corpservices</module>
  <!--
         <module>../pegacorn-mimic/pegacorn-mimic</module>
