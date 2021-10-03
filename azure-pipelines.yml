@@ -5,110 +5,38 @@
 
 resources:
   repositories:
+  - repository: PegacornHestiaAudit
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-hestia-audit
+  - repository: PegacornHestiaAuditIm
+    type: github
+    endpoint: fhirfactory
+    name: fhirfactory/pegacorn-hestia-audit-im
   - repository: PegacornBuildingblocks
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-buildingblocks
-  - repository: PegacornBuildingblocksEdge
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-buildingblocks-edge
-  - repository: PegacornBuildingblocksProcessingPlant
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-buildingblocks-processingplant
   - repository: PegacornDeployment
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-deployment
-  - repository: PegacornDeploymentDatasets
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-deployment-datasets
-  - repository: PegacornDeploymentProperties
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-deployment-properties
-  - repository: PegacornDeploymentTopology
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-deployment-topology
   - repository: PegacornLadon
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-ladon
-  - repository: PegacornLadonDtCache
+  - repository: PegacornMitaf
     type: github
     endpoint: fhirfactory
-    name: fhirfactory/pegacorn-ladon-dtcache
-  - repository: PegacornLadonEdge
+    name: fhirfactory/pegacorn-mitaf
+  - repository: PegacornMitafHl7v2
     type: github
     endpoint: fhirfactory
-    name: fhirfactory/pegacorn-ladon-edge
-  - repository: PegacornLadonMDR
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-ladon-mdr
-  - repository: PegacornLadonModel
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-ladon-model
-  - repository: PegacornLadonProcessingPlant
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-ladon-processingplant
-  - repository: PegacornLadonSubsystem
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-ladon-subsystem
-  - repository: PegacornLadonTwin
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-ladon-twin
-  - repository: PegacornLadonTwinBehaviours
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-ladon-twin-behaviours
-  - repository: PegacornLadonTwinStateSpace
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-ladon-twin-statespace
+    name: fhirfactory/pegacorn-mitaf-hl7v2
   - repository: PegacornPlatform
     type: github
     endpoint: fhirfactory
     name: fhirfactory/pegacorn-platform
-  - repository: PegacornPlatformCommoncode
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-commoncode
-  - repository: PegacornPlatformPetasos
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-petasos
-  - repository: PegacornPlatformPetasosCore
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-petasos-core
-  - repository: PegacornPlatformPetasosDatasets
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-petasos-datasets
-  - repository: PegacornPlatformPetasosIpc
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-petasos-ipc
-  - repository: PegacornPlatformPetasosModel
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-petasos-model
-  - repository: PegacornPlatformPetasosTopology
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-petasos-topology
-  - repository: PegacornPlatformSamples
-    type: github
-    endpoint: fhirfactory
-    name: fhirfactory/pegacorn-platform-samples
   - repository: PegacornSotConduit
     type: github
     endpoint: fhirfactory
@@ -126,32 +54,14 @@ pool:
 
 steps:
 - checkout: self
+- checkout: PegacornHestiaAudit
+- checkout: PegacornHestiaAuditIm
 - checkout: PegacornBuildingblocks
-- checkout: PegacornBuildingblocksEdge
-- checkout: PegacornBuildingblocksProcessingPlant
 - checkout: PegacornDeployment
-- checkout: PegacornDeploymentDatasets
-- checkout: PegacornDeploymentProperties
-- checkout: PegacornDeploymentTopology
 - checkout: PegacornLadon
-- checkout: PegacornLadonDtCache
-- checkout: PegacornLadonEdge
-- checkout: PegacornLadonMDR
-- checkout: PegacornLadonModel
-- checkout: PegacornLadonProcessingPlant
-- checkout: PegacornLadonSubsystem
-- checkout: PegacornLadonTwin
-- checkout: PegacornLadonTwinBehaviours
-- checkout: PegacornLadonTwinStateSpace
+- checkout: PegacornMitaf
+- checkout: PegacornMitafHl7v2
 - checkout: PegacornPlatform
-- checkout: PegacornPlatformCommoncode
-- checkout: PegacornPlatformPetasos
-- checkout: PegacornPlatformPetasosCore
-- checkout: PegacornPlatformPetasosDatasets
-- checkout: PegacornPlatformPetasosIpc
-- checkout: PegacornPlatformPetasosModel
-- checkout: PegacornPlatformPetasosTopology
-- checkout: PegacornPlatformSamples
 - checkout: PegacornSotConduit
 - task: DownloadSecureFile@1
   name: mvnSettings
