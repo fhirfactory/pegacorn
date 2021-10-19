@@ -39,9 +39,9 @@
     </developers>
 
     <modules>
-        <module>../pegacorn-platform/pegacorn-platform</module>
-        <module>../pegacorn-deployment/pegacorn-deployment</module>
-        <module>../pegacorn-buildingblocks/pegacorn-buildingblocks</module>
+        <module>../pegacorn-platform</module>
+        <module>../pegacorn-deployment</module>
+        <module>../pegacorn-buildingblocks</module>
         <module>../pegacorn-mitaf</module>
         <module>../pegacorn-hestia-audit</module>
         <module>../pegacorn-itops</module>
