@@ -46,7 +46,7 @@
         <!--module>../pegacorn-ladon</module-->
         <module>../pegacorn-itops</module>
         <!--module>../pegacorn-fhirplace</module-->
-	    <!--module>../pegacorn-communicate</module-->
+	    <module>../pegacorn-communicate</module>
         <module>../pegacorn-hl7v2-fhir-converter</module>
         <!--module>../pegacorn-fhirbreak</module-->
         <module>../pegacorn-ponos</module>
