@@ -155,7 +155,7 @@
         <version-org.wildfly-maven-plugin>2.1.0.Final</version-org.wildfly-maven-plugin>
         <version-org.wildfly.swamp>2018.5.0</version-org.wildfly.swamp>
         <version-org.wildfly.core-wildfly-embedded>11.1.1.Final</version-org.wildfly.core-wildfly-embedded>
-        <version-org.wildfly.arquillian-wildfly-arquillian-container-managed>2.2.0.Final        </version-org.wildfly.arquillian-wildfly-arquillian-container-managed>
+        <version-org.wildfly.arquillian-wildfly-arquillian-container-managed>5.0.0.Alpha2</version-org.wildfly.arquillian-wildfly-arquillian-container-managed>
 
         <version-org.slf4j>1.7.30</version-org.slf4j>
         <version-org.log4j>1.2.17</version-org.log4j>
