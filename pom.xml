@@ -43,6 +43,7 @@
         <module>../pegacorn-buildingblocks</module>
         <module>../pegacorn-mitaf</module>
         <module>../pegacorn-hestia-audit</module>
+        <module>../pegacorn-hestia-dam-im</module>
         <!--module>../pegacorn-ladon</module-->
         <module>../pegacorn-itops</module>
         <!--module>../pegacorn-fhirplace</module-->
