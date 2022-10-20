@@ -9,12 +9,14 @@
 
     <groupId>net.fhirfactory.pegacorn</groupId>
     <artifactId>pegacorn</artifactId>
-    <version>1.5.0-SNAPSHOT</version>
+    <version>1.6.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
     <name>Pegacorn</name>
     <description>Pegacorn is a Free Open Source Software (FOSS) framework for the integration, management and
         presentation of FHIR based services and functions.
     </description>
+
     <inceptionYear>2019</inceptionYear>
 
     <licenses>
@@ -50,9 +52,9 @@
         <module>../pegacorn-hl7v2-fhir-converter</module>
         <module>../pegacorn-fhirbreak</module>
         <module>../pegacorn-ponos</module>
-        <!--module>../pegacorn-fhirview-oam</module-->
-
-        <!--module>../pegacorn-mimic/pegacorn-mimic</module-->
+        <module>../dricats-navigator</module>
+        <module>../dricats-datagrid</module>
+        <module>../pegacorn-mimic</module>
         <!--module>../pegacorn-sotconduit/pegacorn-sotconduit</module-->
         <!--module>../pegacorn-fhirview/pegacorn-fhirview</module-->
 
